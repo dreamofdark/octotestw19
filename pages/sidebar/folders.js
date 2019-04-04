@@ -21,6 +21,7 @@ class FoldersPage extends DefaultPage {
 		const locator = this.locators.folderByName(folderName);
 		this.page.waitForVisible(locator);
 		this.page.click(locator);
+
 	}
 
 }

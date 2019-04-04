@@ -7,7 +7,6 @@ class LettersPage extends DefaultPage {
 
 	get locators () {
 		const container = '[data-qa-id="dataset-letters"]';
-
 		return {
 			container,
 			letterBySubject: (subject) => {
@@ -42,6 +41,13 @@ class LettersPage extends DefaultPage {
 	openBySubject (subject) {
 		this.page.click(this.locators.letterBySubject(subject));
 	}
+
+	openMailing() {
+		const mailingContainer = '[data-qa-id="metathread-item:folder:500013"]';
+		this.page.click(mailingContainer);
+	}
+
+
 
 }
 

@@ -11,6 +11,10 @@ class LettersSteps extends DefaultSteps {
 		this.page.openBySubject(subject);
 	}
 
+	openMailing() {
+		this.page.openMailing();
+	}
+
 }
 
 export default new LettersSteps();
